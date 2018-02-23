@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Rugby Counter</string>
+    <string name="french_team">XV de France</string>
+    <string name="newZeland_team">The All Blacks</string>
+    <string name="score_5_p">try</string>
+    <string name="score_2_p">conversion</string>
+    <string name="score_3_p">drop / penalty</string>
+    <string name="reset_button">reset</string>
 </resources>

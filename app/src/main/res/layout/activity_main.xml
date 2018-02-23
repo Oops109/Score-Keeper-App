@@ -13,6 +13,11 @@
         android:layout_height="match_parent"
         android:background="#FFFFFF">
 
+        <ImageView
+            android:src="@drawable/rugby"
+           style="@style/BackgroundImage"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,59 +30,33 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="XV de France"
+                style="@style/TitleTextView"
                 android:background="#1A237E"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:text="@string/french_team"/>
 
             <ImageView
                 android:src="@drawable/ffr"
-                android:layout_width="wrap_content"
-                android:layout_height="54dp" />
+                style="@style/TeamImageView" />
 
             <TextView
                 android:id="@+id/team_france_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                style="@style/ScoreTextView"
+                android:text="0"/>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/ScoreButton"
                 android:onClick="addFiveForFrance"
-                android:text="Try" />
+                android:text="@string/score_5_p" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/ScoreButton"
                 android:onClick="addTwoForFrance"
-                android:text="Conversion" />
+                android:text="@string/score_2_p" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/ScoreButton"
                 android:onClick="addThreeForFrance"
-                android:text="Drop / Penalty" />
+                android:text="@string/score_3_p" />
         </LinearLayout>
 
         <View
@@ -92,59 +71,34 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:padding="16dp"
+               style="@style/TitleTextView"
                 android:text="The All Blacks"
-                android:textColor="#FFFFFF"
                 android:background="#000000"
-                android:textSize="20sp" />
+                android:textSize="@dimen/text_size_medium" />
 
             <ImageView
                 android:src="@drawable/allblacks"
-                android:layout_width="wrap_content"
-                android:layout_height="54dp" />
+                style="@style/TeamImageView" />
 
             <TextView
                 android:id="@+id/team_blacks_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                style="@style/ScoreTextView"
+                android:text="0"/>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                style="@style/ScoreButton"
                 android:onClick="addFiveForBlacks"
-                android:text="Try" />
+                android:text="@string/score_5_p" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginRight="22dp"
+                style="@style/ScoreButton"
                 android:onClick="addTwoForBlacks"
-                android:text="Conversion" />
+                android:text="@string/score_2_p" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginRight="22dp"
+                style="@style/ScoreButton"
                 android:onClick="addThreeForBlacks"
-                android:text="Drop / Penalty" />
+                android:text="@string/score_3_p" />
         </LinearLayout>
     </LinearLayout>
 
@@ -153,9 +107,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="@dimen/margin_bottom"
         android:onClick="resetScore"
-        android:text="Reset" />
+        android:text="@string/reset_button" />
 
 </RelativeLayout>
 </ScrollView>
